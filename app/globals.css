@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: "Jakarta Sans";
+  src: url('../fonts/PlusJakartaSans-Medium.ttf') format('truetype'); 
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+
+body {
+  font-family: Jakarta Sans; 
+}
+.children::-webkit-scrollbar{
+  display: none;
+}
+.integration{
+  display: flex;
+height: 40px;
+padding: 10px;
+justify-content: space-between;
+align-items: center;
+align-self: stretch;
+}
+.inte{
+  flex-shrink: 0;
+}
+.toggle{
+  position: absolute;
+  right: 1px;
+  top: 9px;
+}
+.bg-layout{
+  background-color: #F7F8FA;    
+}
+.moon-light-mode {
+  opacity: 0.4;
+}
+.cards{
+  border-radius: 14px;
+  border: 1px solid #EDF2F7;
+  background: #FFF;
+}
+.progress-purple{
+  background: var(--Purple, #6160DC);
+}
+.progress-blue{
+  background: var(--Blue, #54C5EB);
+}
+.progress-orange{
+  background: var(--Orange, #FFB74A);
+}
+.bg-progress{
+  background: #ED544E;
+}
+/* Add these styles to your CSS or stylesheet */
+/* Add these styles to your CSS or stylesheet */
+.transition-collapsed {
+  transform: translateX(0);
+  width: 54px; /* Adjust the width for the collapsed state */
+  transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+.transition-expanded{
+  transform: translateX(0);
+  width: 150px; /* Adjust the width for the expanded state */
+  transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
+}
